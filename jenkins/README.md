@@ -1,12 +1,8 @@
-#Install 
+# Install 
 
 ## Build image trong thư mục build-image trước
 
 ## Install Jenkins
-
-- Create folder
-
-
 
 - Copy nội dung file daemon/daemon.json vào /etc/docker/daemon.json
 restart docker
@@ -14,6 +10,8 @@ restart docker
 ```bash
 sudo service docker restart
 ```
+
+- Install
 
 ```bash
 mkdir jenkins_docker_certs jenkins_home
