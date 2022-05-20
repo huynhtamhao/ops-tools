@@ -8,7 +8,7 @@
 touch Dockerfile
 ```
 
--Paste nội dung bên dưới vào Dockerfile
+- Paste nội dung bên dưới vào Dockerfile
 
 ```Dockerfile
 FROM jenkins/jenkins:lts-jdk11
@@ -33,13 +33,12 @@ RUN jenkins-plugin-cli --plugins "blueocean:1.25.3 docker-workflow:1.28"
 - Thực hiện build Dockerfile
 
 ```bash
-docker build -t kairos-jenkins:1.0.0 .
+docker build -t huynhtamhao/jenkins:1.0.0 .
 ```
  
 - Push Image Dockerfile to Docker hub
 
 ```bash
-docker tag kairos-jenkins:1.0.0 huynhtamhao/kairos-jenkins:1.0.0
-docker push huynhtamhao/kairos-jenkins:1.0.0
+docker push huynhtamhao/jenkins:1.0.0
 ```
 
